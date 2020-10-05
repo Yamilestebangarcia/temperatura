@@ -6,12 +6,22 @@ import java.util.Scanner;
 public class Temperaturas {
 
     public static void main(String[] args) {
+
+//variable de entrada
         float grados = 0;
+
+        //variable de salida
         float fahrenheit;
         float kelvin;
+
+        //variable auxiliar
         boolean control = true;
+
+        //entrada de datos 
         Scanner teclado = new Scanner(System.in); //creo el objeto 
         System.out.println("Introduce la temperatura en grados");// imprimo
+
+        //procesamiento
         while (control) { ///un bucle que hace que se repita si no es correcto el dato
             try {
                 grados = teclado.nextFloat(); //pido por teclado el valor 
@@ -31,6 +41,7 @@ public class Temperaturas {
         fahrenheit = (grados * 9 / 5) + 32;//funcion para calcular el valor
         kelvin = grados + 273.15f;//funcion para calcular el valor
 
+        //salida
         System.out.println("la temperatura en fahrenheit es: " + fahrenheit);
         System.out.println("la temperatura en kelvin es: " + kelvin);
 
